@@ -65,6 +65,45 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Android-animation-note" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/19/Android-animation-note/" class="article-date">
+  <time datetime="2017-03-19T15:15:42.000Z" itemprop="datePublished">2017-03-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/19/Android-animation-note/">Android animation note</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#Drag Surface<br>view.setTranslationY<br>View.offsetTopAndBottom<br>ViewDragHelper</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">ViewDragHelper.Callback&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">tryCaptureView</span><span class="params">(View child, <span class="keyword">int</span> pointerId)</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> child==sheet;</div><div class="line">  &#125;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getViewVerticalDragRange</span><span class="params">(View child)</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> sheetBottom -sheetExpandedTop;</div><div class="line">  &#125;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">clampViwPositionVertical</span><span class="params">(View child, <span class="keyword">int</span> top, <span class="keyword">int</span> dy)</span></span>&#123;</div><div class="line">  <span class="keyword">return</span> Math.min(Math.max(top,sheetExpandedTop), sheetBottom)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><img src="https://lh3.googleusercontent.com/-MjsStgByoFE/WM6l9G9_pyI/AAAAAAAAAAk/YU_ObkoLZ7A/I/%25255BUNSET%25255D.png" alt="屏幕快照 2017-03-19 下午11.33.31"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/03/19/Android-animation-note/" data-id="cj0gukxw400032c2xo9in77r6" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-second-test" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/03/19/second-test/" class="article-date">
@@ -98,7 +137,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/19/second-test/" data-id="cj0gs7xo600009s2xqq4e1ufs" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/19/second-test/" data-id="cj0gukxvy00012c2x01c8p4vw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -135,14 +174,14 @@
 <h2 id="帮助我们改进-MWeb"><a href="#帮助我们改进-MWeb" class="headerlink" title="帮助我们改进 MWeb"></a>帮助我们改进 MWeb</h2><p>如果你喜欢 MWeb，想让它变得更好，你可以：</p>
 <ol>
 <li>推荐 MWeb，让更多的人知道。</li>
-<li>给我们发反馈和建议：<a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#58;&#x63;&#x6f;&#100;&#x65;&#114;&#x66;&#x6f;&#114;&#x61;&#114;&#x74;&#x2b;&#50;&#x33;&#x33;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#109;">&#x63;&#x6f;&#100;&#x65;&#114;&#x66;&#x6f;&#114;&#x61;&#114;&#x74;&#x2b;&#50;&#x33;&#x33;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#109;</a></li>
+<li>给我们发反馈和建议：<a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#99;&#x6f;&#x64;&#x65;&#x72;&#x66;&#x6f;&#114;&#x61;&#114;&#116;&#43;&#50;&#x33;&#51;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;">&#99;&#x6f;&#x64;&#x65;&#x72;&#x66;&#x6f;&#114;&#x61;&#114;&#116;&#43;&#50;&#x33;&#51;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;</a></li>
 <li>在 Mac App Store 上评价 （如果是在 MAS 上购买的话）。</li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/19/testMyblog/" data-id="cj0gs7xog00029s2xnamjywx9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/19/testMyblog/" data-id="cj0gukxw200022c2xr8oi6xyx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -187,7 +226,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/19/hello-world/" data-id="cj0gs7xoc00019s2xbh58gmgi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/19/hello-world/" data-id="cj0gukxvt00002c2xir8kyqfj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -225,6 +264,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/03/19/Android-animation-note/">Android animation note</a>
+          </li>
         
           <li>
             <a href="/2017/03/19/second-test/">Markdown 语法和 MWeb 写作使用说明</a>
